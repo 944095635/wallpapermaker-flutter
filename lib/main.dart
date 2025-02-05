@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wallpaper_maker/pages/frame/frame_page.dart';
 import 'package:wallpaper_maker/pages/splash/splash_page.dart';
 import 'package:wallpaper_maker/values/fonts.dart';
 import 'package:window_manager/window_manager.dart';

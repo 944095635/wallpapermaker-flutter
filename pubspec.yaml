@@ -37,6 +37,8 @@ dependencies:
   get: ^5.0.0-release-candidate-9.2.1
   animate_do: ^3.3.7     # 简易动画框架
   window_manager: ^0.4.3 # 桌面无边框窗口
+  cached_network_image: ^3.4.1 # 图片缓存
+  smooth_page_indicator: ^1.2.0+3 # 页面下标指示器
 
 dev_dependencies:
   flutter_test:
@@ -76,14 +78,14 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: 白无常可可体
-      fonts:
-        - asset: fonts/白无常可可体细.ttf
-          weight: 300
-        - asset: fonts/白无常可可体常规.ttf
-          weight: 400
-        - asset: fonts/白无常可可体粗.ttf
-          weight: 600
+    #- family: 白无常可可体
+    #  fonts:
+    #    - asset: fonts/白无常可可体细.ttf
+    #      weight: 300
+    #    - asset: fonts/白无常可可体常规.ttf
+    #      weight: 400
+    #    - asset: fonts/白无常可可体粗.ttf
+    #      weight: 600
 
     - family: YuFanXinYu
       fonts:

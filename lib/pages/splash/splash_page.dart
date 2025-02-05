@@ -22,8 +22,8 @@ class _SplashPageState extends State<SplashPage> {
             children: [
               FadeOutLeft(
                 animate: true,
-                delay: Duration(milliseconds: 1700),
-                duration: Duration(milliseconds: 1500),
+                delay: Duration(milliseconds: 2000),
+                duration: Duration(milliseconds: 1000),
                 child: Text(
                   "造",
                   style: TextStyle(
@@ -33,8 +33,8 @@ class _SplashPageState extends State<SplashPage> {
               ),
               FadeOutUp(
                 animate: true,
-                delay: Duration(milliseconds: 1800),
-                duration: Duration(milliseconds: 2000),
+                delay: Duration(milliseconds: 2000),
+                duration: Duration(milliseconds: 1000),
                 child: Text(
                   "物",
                   style: TextStyle(
@@ -44,7 +44,7 @@ class _SplashPageState extends State<SplashPage> {
               ),
               FadeOutDown(
                 animate: true,
-                delay: Duration(milliseconds: 1900),
+                delay: Duration(milliseconds: 2000),
                 duration: Duration(milliseconds: 2000),
                 child: Text(
                   "主",
@@ -55,8 +55,8 @@ class _SplashPageState extends State<SplashPage> {
               ),
               FadeOutUp(
                 animate: true,
-                delay: Duration(milliseconds: 2100),
-                duration: Duration(milliseconds: 2000),
+                delay: Duration(milliseconds: 2000),
+                duration: Duration(milliseconds: 1000),
                 child: Text(
                   "壁",
                   style: TextStyle(
@@ -66,7 +66,7 @@ class _SplashPageState extends State<SplashPage> {
               ),
               FadeOutRight(
                 animate: true,
-                delay: Duration(milliseconds: 2300),
+                delay: Duration(milliseconds: 2000),
                 duration: Duration(milliseconds: 1000),
                 onFinish: (direction) {
                   Get.to(() => FramePage());

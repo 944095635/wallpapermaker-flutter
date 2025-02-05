@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  animate_do: ^3.3.7     # 简易动画框架
   window_manager: ^0.4.3 # 桌面无边框窗口
 
 dev_dependencies:
@@ -73,10 +74,25 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: 白无常可可体
+      fonts:
+        - asset: fonts/白无常可可体细.ttf
+          weight: 300
+        - asset: fonts/白无常可可体常规.ttf
+          weight: 400
+        - asset: fonts/白无常可可体粗.ttf
+          weight: 600
+
+    - family: YuFanXinYu
+      fonts:
+        - asset: fonts/YuFanXinYu-Light.ttf
+          weight: 300
+        - asset: fonts/YuFanXinYu-Medium.ttf
+          weight: 400
+        - asset: fonts/YuFanXinYu-Bold.ttf
+          weight: 600
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

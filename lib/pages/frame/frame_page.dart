@@ -11,11 +11,39 @@ class FramePage extends StatefulWidget {
 class _FramePageState extends State<FramePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: HomePage(),
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        HomePage(),
+
+        /// 菜单导航栏
+        Positioned(
+          top: 10,
+          right: 10,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              TextButton(
+                onPressed: () {},
+                child: Text("推荐"),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text("本地"),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text("设置"),
+              ),
+            ],
+          ),
+        )
+      ],
     );
   }
 }
+
+// 菜单项 ： 推荐 本地 设置
 
 // body: Padding(
 //         padding: const EdgeInsets.all(8.0),

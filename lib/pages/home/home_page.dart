@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaper_maker/values/fonts.dart';
 import 'package:wallpaper_maker/widgets/blur_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,7 +22,7 @@ class _HomePageState extends State<HomePage> {
           ),
           DecoratedBox(
             decoration: BoxDecoration(
-              //color: Colors.black45,
+              color: Colors.black87,
             ),
           ),
           Center(
@@ -42,6 +43,24 @@ class _HomePageState extends State<HomePage> {
                   child: Padding(
                     padding: const EdgeInsets.all(40.0),
                     child: Text("英雄联盟"),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Center(
+            child: Column(
+              children: [
+                Text(
+                  "造物主壁纸",
+                  style: TextStyle(
+                    fontSize: 40,
+                  ),
+                ),
+                Text(
+                  "造物主壁纸",
+                  style: TextStyle(
+                    fontSize: 40,
                   ),
                 ),
               ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animate_do/animate_do.dart';
+import 'package:get/instance_manager.dart';
+import 'package:get/route_manager.dart';
 import 'package:wallpaper_maker/pages/frame/frame_page.dart';
 
 class SplashPage extends StatefulWidget {
@@ -67,13 +69,7 @@ class _SplashPageState extends State<SplashPage> {
                 delay: Duration(milliseconds: 2300),
                 duration: Duration(milliseconds: 1000),
                 onFinish: (direction) {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return FramePage();
-                      },
-                    ),
-                  );
+                  Get.to(() => FramePage());
                 },
                 child: Text(
                   "纸",

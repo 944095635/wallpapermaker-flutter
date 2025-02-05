@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:wallpaper_maker/pages/frame/frame_page.dart';
 import 'package:wallpaper_maker/pages/splash/splash_page.dart';
 import 'package:wallpaper_maker/values/fonts.dart';
@@ -33,8 +34,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Wallpaper Maker',
+      defaultTransition: Transition.fadeIn,
 
       // 白色主题
       theme: ThemeData(

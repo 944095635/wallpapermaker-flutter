@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaper_maker/values/fonts.dart';
 import 'package:wallpaper_maker/widgets/blur_widget.dart';
 
 class HomePage extends StatefulWidget {

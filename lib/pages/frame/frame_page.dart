@@ -18,8 +18,8 @@ class _FramePageState extends State<FramePage> {
 
         /// 菜单导航栏
         Positioned(
-          top: 10,
-          right: 10,
+          top: 20,
+          right: 20,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [

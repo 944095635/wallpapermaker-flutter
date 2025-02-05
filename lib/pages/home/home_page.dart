@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wallpaper_maker/widgets/blur_widget.dart';
 
@@ -24,6 +25,10 @@ class _HomePageState extends State<HomePage> {
               color: Colors.black87,
             ),
           ),
+
+          // 放置页标组件
+          CupertinoActivityIndicator(),
+
           Center(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,

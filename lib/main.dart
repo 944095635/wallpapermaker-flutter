@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:wallpaper_maker/pages/frame_page.dart';
+import 'package:wallpaper_maker/pages/frame/frame_page.dart';
 import 'package:window_manager/window_manager.dart';
 
 void main() async {
@@ -11,12 +11,13 @@ void main() async {
     WindowOptions windowOptions = WindowOptions(
       center: true,
       skipTaskbar: false,
-      size: Size(800, 600),
-      minimumSize: Size(800, 600),
+      size: Size(1080, 680),
+      minimumSize: Size(700, 500),
       titleBarStyle: TitleBarStyle.hidden,
       backgroundColor: Colors.transparent,
     );
     windowManager.waitUntilReadyToShow(windowOptions, () async {
+      // 无边框 await windowManager.setAsFrameless();
       await windowManager.show();
       await windowManager.focus();
     });
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       themeMode: ThemeMode.dark,
+      debugShowCheckedModeBanner: false,
       home: const FramePage(),
     );
   }
